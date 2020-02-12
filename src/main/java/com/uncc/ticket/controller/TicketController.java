@@ -55,7 +55,7 @@ public class TicketController {
         // Code here
         TicketEntity ticket = ticketService.findById(id);
         ticketService.storeTicket(ticket);
-        model.addAttribute("ticket", ticket);
+        model.addAttribute("ticket", ticket); 
         return "tickets/edit";
     }
 
